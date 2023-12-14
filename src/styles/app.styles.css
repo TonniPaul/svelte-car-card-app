@@ -1,0 +1,71 @@
+:root {
+   --color-primary: #e28525;
+   --color-secondary: #016972;
+   --color-tertiary: #00403f;
+}
+html,
+body {
+      box-sizing: border-box;
+      width: 100vw;
+      overflow-x: hidden;
+      font-family: 'Roboto', sans-serif;
+   }
+
+*,
+*::after, 
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   max-width: 100%;
+}
+
+.main-container {
+   display: grid;
+   place-items: center;
+   height: 100vh;
+}
+.flex {
+   
+   @media screen and (min-width: 56.25em) {
+      display: flex;
+      overflow: hidden;
+      border-radius: 2rem;
+      width: max-content;
+      margin: 0 auto;
+   }
+}
+
+.card {
+   background-color: var(--color-primary);
+   padding: 4rem 2rem;
+   color: white;
+
+   &.secondary {
+      background-color: var(--color-secondary);
+   }
+
+   &.tertiary {
+      background-color: var(--color-tertiary);
+   }
+
+   @media screen and (min-width: 56.25em) {
+      max-width: 18.75rem;
+   }
+}
+
+.title-text {
+   font-size: 1.5rem;
+   font-family: 'Bebas Neue', sans-serif;
+   margin: 1rem 0;
+   text-transform: uppercase;
+}
+
+.card-button {
+   border: 2px solid white;
+   padding: 1rem 2rem;
+   border-radius: 3rem;
+   background: none;
+   margin-top: 2rem;
+   color: white;
+}
