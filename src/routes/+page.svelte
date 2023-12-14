@@ -7,6 +7,11 @@
    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 </style>
 
+<svelte:head>
+	<title>Svelte Card App</title>
+	<meta name="description" content="Svelte card app" />
+</svelte:head>
+
 <main class="main-container">
    <div class="flex">
       <Card 
